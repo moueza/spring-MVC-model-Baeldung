@@ -30,6 +30,17 @@ https://github.com/eugenp/tutorials/tree/01dddf49c0a2545f4477d8d220add3c5849e2fb
     <artifactId>spring-web</artifactId>
     <version>4.3.11.RELEASE</version>
 </dependency>
+
+
+<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc
+import org.springframework.web.servlet.ModelAndView;
+ -->
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-webmvc</artifactId>
+    <version>4.3.11.RELEASE</version>
+</dependency>
+
 <dependency>
     <groupId>org.thymeleaf</groupId>
     <artifactId>thymeleaf-spring3</artifactId>
