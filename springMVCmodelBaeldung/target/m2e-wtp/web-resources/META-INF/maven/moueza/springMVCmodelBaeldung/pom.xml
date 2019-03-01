@@ -1,53 +1,94 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>moueza</groupId>
-  <artifactId>springMVCmodelBaeldung</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>springMVCmodelBaeldung Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-<!--   http://www.baeldung.com/spring-mvc-model-model-map-model-view
-https://github.com/eugenp/tutorials/tree/01dddf49c0a2545f4477d8d220add3c5849e2fb0/spring-all -->
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-    </dependency>
-    
-    
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-context</artifactId>
-    <version>4.3.11.RELEASE</version>
-</dependency>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>moueza</groupId>
+	<artifactId>springMVCmodelBaeldung</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>springMVCmodelBaeldung Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+	<!-- http://www.baeldung.com/spring-mvc-model-model-map-model-view https://github.com/eugenp/tutorials/tree/01dddf49c0a2545f4477d8d220add3c5849e2fb0/spring-all -->
+
+	<properties>
+		<springVersion>4.3.11.RELEASE</springVersion>
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+		<!-- https://maven.apache.org/plugins/maven-compiler-plugin/examples/set-compiler-source-and-target.html -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<java.version>1.8</java.version>
+		<!-- https://maven.apache.org/general.html -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<log4j2.version>2.11.0</log4j2.version>
+
+		<!-- <struts2.version>2.3.15</struts2.version> -->
+		<struts2.version>2.3.1.2</struts2.version>
 
 
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-web</artifactId>
-    <version>4.3.11.RELEASE</version>
-</dependency>
+		<!-- <springframework.version>4.3.7.RELEASE</springframework.version> regression 
+			because DispatchActionSupport deprecated no solution in Spring 4 -->
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit5.version>5.1.1</junit5.version>
+		<junitplatform.version>1.0.0</junitplatform.version>
 
 
-<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc
-import org.springframework.web.servlet.ModelAndView;
- -->
-<dependency>
-    <groupId>org.springframework</groupId>
-    <artifactId>spring-webmvc</artifactId>
-    <version>4.3.11.RELEASE</version>
-</dependency>
 
-<dependency>
-    <groupId>org.thymeleaf</groupId>
-    <artifactId>thymeleaf-spring3</artifactId>
-    <version>3.0.8.RELEASE</version>
-</dependency>
-  </dependencies>
-  <build>
-    <finalName>springMVCmodelBaeldung</finalName>
-  </build>
+
+
+
+
+
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<junit.version>4.12</junit.version>
+		<junit.jupiter.version>5.1.1</junit.jupiter.version>
+		<junit.vintage.version>5.1.1</junit.vintage.version>
+		<junit.platform.version>1.1.1</junit.platform.version>
+	</properties>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>${springVersion}</version>
+		</dependency>
+
+
+
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-web</artifactId>
+			<version>${springVersion}</version>
+		</dependency>
+
+
+		<!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc 
+			import org.springframework.web.servlet.ModelAndView; -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${springVersion}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.thymeleaf</groupId>
+			<artifactId>thymeleaf-spring3</artifactId>
+			<version>3.0.8.RELEASE</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>springMVCmodelBaeldung</finalName>
+	</build>
 </project>
