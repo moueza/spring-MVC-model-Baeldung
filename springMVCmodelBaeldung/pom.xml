@@ -11,7 +11,7 @@
 	<!-- http://www.baeldung.com/spring-mvc-model-model-map-model-view https://github.com/eugenp/tutorials/tree/01dddf49c0a2545f4477d8d220add3c5849e2fb0/spring-all -->
 
 	<properties>
-		<springVersion>4.3.11.RELEASE</springVersion>
+		<springVersion>6.0.0</springVersion>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
